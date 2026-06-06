@@ -6,8 +6,9 @@ const nextConfig = {
       type: 'asset/resource'
     });
     if (isServer) {
+      const existingExternals = config.externals || [];
       config.externals = [
-        ...（config.externals || []),
+        ...(Array.isArray(existingExternals) ? existingExternals : [existingExternals]),
         'electron',
         'rebrowser-playwright-core',
         '@playwright/browser-chromium',

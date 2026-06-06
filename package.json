@@ -1,5 +1,6 @@
 {
   "name": "suno-api",
+  "packageManager": "pnpm@9.0.0",
   "description": "Use API to call the music generation service of suno.ai, and easily integrate it into agents like GPTs.",
   "author": {
     "name": "gcui.ai",

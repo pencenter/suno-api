@@ -3,6 +3,8 @@ import { sunoApi } from "@/lib/SunoApi";
 import { corsHeaders } from "@/lib/utils";
 
 export const dynamic = "force-dynamic";
+export const runtime = "nodejs";
+export const fetchCache = "force-no-store";
 
 export async function GET(req: NextRequest) {
   if (req.method === 'GET') {
